@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <form action="" method="" class="form-container">
+            <h2 class="title">Login Form</h2>
+            <div class="form-input">
+
+                
+                <div class="input-field">
+                    <input type="email" id="input_email" class="textbox">
+                    <label>Email</label>
+                    <p id="email_status"></p>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="input_password" class="textbox">
+                    <label>Password</label>
+                    <p id="password_status"></p>
+                </div>
+                <div class="link">
+
+                    <a href="registerPage.html" >Sign up for an account</a>
+                </div>
+                
+
+                
+                <div class="submit">
+                    <input type="button" class="submit-button" onclick="validateAll()" value="Submit"> 
+                </div>
+            </div>
+            
+        </form>
+        
+    </div>
+    <div id="toast">Some text some message..</div>
+    <!-- <script src="js/register.js"></script> -->
+</body>
+</html>

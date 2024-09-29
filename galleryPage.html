@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/galleryPage.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header id="navbar">
+        <a href="">
+    
+            <img src="asset/bllmLogo.png" alt="">
+        </a>
+    
+        <nav>
+            <ul>
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="galleryPage.html">Gallery</a></li> 
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                
+                
+                <li><a href="#">User  <i class="fa fa-caret-down"></i> </a>
+                
+                <ul>
+                    <li><a href="loginPage.html">Login</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="registerPage.html">Register</a></li>
+                </ul>        
+                </li>
+                <!-- or logout -->
+            </ul>
+        </nav>
+      
+    </header>
+    <aside>
+        <div class="filter-bar">
+            <div class="filter-title">Filter By</div>
+            <div class="filter-container">
+                <div class="">Category</div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="Sedan">
+                    <label for="Sedan">Sedan</label>
+                </div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="Sport">
+                    <label for="Sport">Sport</label>
+                </div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="Luxury">
+                    <label for="Luxury">Luxury</label>
+                </div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="Hyper">
+                    <label for="Hyper">Hyper</label>
+                </div>
+                
+            </div>
+            <div class="filter-container">
+                <div class="">Rating</div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="5">
+                    <label for="5">5 stars</label>
+                </div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="4">
+                    <label for="4">4 stars</label>
+                </div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="3">
+                    <label for="3">3 stars</label>
+                </div>
+                
+                
+            </div>
+            <!-- <div class="filter-container">
+                <div class="">Price</div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="budget3">
+                    <label for="budget3">> $200000</label>
+                </div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="budget2">
+                    <label for="budget2">$100000 - $200000</label>
+                </div>
+                <div class="filter-section">
+
+                    <input type="checkbox" id="budget1">
+                    <label for="budget1">< $100000</label>
+                </div> -->
+                
+                
+            </div>
+        </div>
+    </aside>
+    <!-- <select id="category-filter">
+        <option value="all">All</option>
+        <option value="Sport">Sport</option>
+        <option value="Luxury">Luxury</option>
+    </select> -->
+    <div class="gallery-container">
+
+        <div class="car-card">
+            <img src="asset/car/Nissan-GT-R-Nismo.webp" alt="">
+            <div class="car-details">
+    
+                <div class="car-name">Nissan GT-R Nismo</div>
+                <div class="detail-area">
+                    <div class="car-category">Sport</div>
+                    <div class="car-rating"><span id="rating1">5</span>/5</div>
+                </div>
+                <div class="car-price">$100000</div>
+                <div class="car-btn">See More</div>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="asset/car/Pagani-Huayra-BC.webp" alt="">
+            <div class="car-details">
+    
+                <div class="car-name">Pagani Huayra BC</div>
+                <div class="detail-area">
+                    <div class="car-category">Hyper</div>
+                    <div class="car-rating"><span id="rating1">5</span>/5</div>
+                </div>
+                <div class="car-price">$180000</div>
+                <div class="car-btn">See More</div>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="asset/car/Mitsubishi-Lancer-Evolution.webp" alt="">
+            <div class="car-details">
+    
+                <div class="car-name">Lancer Evolution</div>
+                <div class="detail-area">
+                    <div class="car-category">Sedan</div>
+                    <div class="car-rating"><span id="rating1">3</span>/5</div>
+                </div>
+                <div class="car-price">$30000</div>
+                <div class="car-btn">See More</div>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="asset/car/Aston-Martin-Vantage-GT12.webp" alt="">
+            <div class="car-details">
+    
+                <div class="car-name">Aston Martin GT12</div>
+                <div class="detail-area">
+                    <div class="car-category">Sport</div>
+                    <div class="car-rating"><span id="rating1">5</span>/5</div>
+                </div>
+                <div class="car-price">$120000</div>
+                <div class="car-btn">See More</div>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="asset/car/McLaren-P1tm.webp" alt="">
+            <div class="car-details">
+    
+                <div class="car-name">McLaren-P1tm</div>
+                <div class="detail-area">
+                    <div class="car-category">Luxury</div>
+                    <div class="car-rating"><span id="rating1">4</span>/5</div>
+                </div>
+                <div class="car-price">$200000</div>
+                <div class="car-btn">See More</div>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="asset/car/Mercedes-Benz-Amg-GT-S.webp" alt="">
+            <div class="car-details">
+    
+                <div class="car-name">Mercedes Benz Amg GT</div>
+                <div class="detail-area">
+                    <div class="car-category">Luxury</div>
+                    <div class="car-rating"><span id="rating1">4</span>/5</div>
+                </div>
+                <div class="car-price">$100000</div>
+                <div class="car-btn">See More</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
